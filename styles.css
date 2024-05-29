@@ -1,0 +1,122 @@
+html{
+    --bgColor : #F1F1F1;
+    --buttonColor : #615EFC;
+    --taskBg : #CDE8E5;
+    --inputColor : #FFFFFF;
+    --inputBgColor : #FFFFFF;
+    --inputBorderColor : #FFFFFF;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bgColor);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form{
+    display: flex;
+    align-items: center
+}
+
+.container .input{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: larger;
+    width: 40vh;
+    border: none;
+    outline: invert;
+    margin-right: 10px;
+}
+
+.container .formButton{
+    padding: 23px;
+    border-radius: 10px;
+    font-size: medium;
+    cursor: pointer;
+    background-color: var(--buttonColor);
+    color: white;
+    border: none;
+}
+
+.container .formButton:hover{
+    background-color: #7E8EF1;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--taskBg);
+    padding: 15px;
+    border-radius: 15px;
+    font-size: larger;
+    width: 60vh;
+    border: none;
+}
+.task .taskTitle{
+    font-size: medium;
+    font-family:  'Gill Sans MT', sans-serif;
+    width: 50vh;
+}
+
+.task .complete{
+    size: 50px;
+    cursor: pointer;
+}
+
+.task input{
+    height: 25px;
+    width: 25px;
+  border-radius: 4px;
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.task button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.task button:hover{
+    background-color: #D2649A;
+}
+
+
+
+/* Media Quieres */
+@media screen and (max-width: 768px) {
+    .container{
+        margin: 0 auto;
+        width: 90%;
+        }
+.container .input{
+    font-size: small;
+    padding: 15px;
+}
+.container .formButton{
+    padding: 10px;
+}
+  .task {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .task .taskTitle {
+    width: 70%;
+  }
+}

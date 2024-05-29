@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Styles Sheet File and JavaScript File links -->
+    <link href="./styles.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+    <title>To do List App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+      </header>
+      <!-- Task Form -->
+      <article>
+        <form id="form" type="submit" class="form">
+          <input
+            type="text"
+            id="input"
+            class="input"
+            minlength="6"
+            required
+            placeholder="Enter your task..."
+          />
+          <button type="submit" class="formButton">Add Task</button>
+        </form>
+      </article>
+      <!-- Task List and heading if there are no tasks -->
+      <main style="margin-top: 50px">
+        <h2 style="text-align: center" id="helpText">Add Tasks to Manage Work</h2>
+        <section id="taskslist" >
+        <!-- Single Task here -->
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
