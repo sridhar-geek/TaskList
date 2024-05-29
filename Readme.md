@@ -7,4 +7,4 @@
 Clone the repository using `git clone https://github.com/sridhar-geek/taskList.git`
 
 
-To view the Demo of the Project [Click here](https://movie-database-zeta-rosy.vercel.app/)
+To view the Demo of the Project [Click here](https://sridhar-geek.github.io/taskList/)
